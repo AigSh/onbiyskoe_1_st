@@ -4,11 +4,13 @@ $(document).ready(function(){
 		dots:false,
 		slidesToShow:1,
 		autoplay:true,
-		speed:250,
+		speed:500,
 		autoplaySpeed:300,
 		fade: true,
 		waitForAnimate: false,
 		pauseOnHover: false,
+		infinite: false,
+		initialSlide: 0,
 		// asNavFor: ('.slider_2'),
 	}		
 	);
@@ -25,5 +27,10 @@ $(document).ready(function(){
 		// asNavFor: ('.slider'),
 	}		
 	);
+	$('.slider').on('beforeChange', function(e, slick, current, next){
+		if (next === slick.slideCount-1){
+		   slick.autoPlay = false;
+		}
+	 });
 });
 
