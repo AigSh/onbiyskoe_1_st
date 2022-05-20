@@ -32,29 +32,6 @@ img {
 	border: none;
 }
 
-.slider_2{
-	margin-top: 20px;
-}
-.slider_2 .slick-arrow.slick-prev{
-	left: 0;
-	background: url('../img/sl-arrow_l.svg') 0 0 / 100% no-repeat;
-}
-.slider_2 .slick-arrow.slick-next{
-	right: 0;
-	background: url('../img/sl-arrow_r.svg') 0 0 / 100% no-repeat;
-}
-
-
-.slider_2 .slick-arrow{
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	z-index: 10;
-	font-size: 0;
-	width: 30px;
-	height: 60px;
-	border: none;
-}
 
 .title {
 	width: 150px;
